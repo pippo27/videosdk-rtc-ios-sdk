@@ -1,0 +1,6 @@
+framework module VideoSDKRTCWebRTC {
+    umbrella header "../Headers/WebRTC-umbrella.h"
+
+    export *
+    module * { export * }
+}
