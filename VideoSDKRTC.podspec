@@ -5,10 +5,10 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
                        Video SDK enables the opportunity to integrate immersive video experiences into your application.
                        DESC
-  s.homepage         = 'https://github.com/videosdk-live/videosdk-rtc-ios-sdk'
+  s.homepage         = 'https://github.com/pippo27/videosdk-rtc-ios-sdk'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Zujo Tech Pvt Ltd.' => 'support@zujo.io' }
-  s.source           = { :git => 'https://github.com/videosdk-live/videosdk-rtc-ios-sdk.git', :tag => 'v2.1.2' }
+  s.source           = { :git => 'https://github.com/pippo27/videosdk-rtc-ios-sdk.git', :tag => 'v2.1.2' }
   s.swift_version    = '5.0'
   s.ios.deployment_target = '12.0'
   s.vendored_frameworks = 'Frameworks/Mediasoup.xcframework', 'Frameworks/VideosdkWebSocket.xcframework', 'Frameworks/VideoSDKRTC.xcframework'
