@@ -36,6 +36,15 @@ Video sdk enables opportunity to integrate immersive video experiences into your
   s.vendored_frameworks = 'Frameworks/VideoSDKRTC.xcframework', 'Frameworks/Mediasoup.xcframework', 'Frameworks/WebRTC.xcframework', 'Frameworks/VideosdkWebSocket.xcframework'
   
   # default bulid settings
+  
+   s.subspec 'WithoutWebRTC' do |ss|
+    ss.vendored_frameworks = 'Frameworks/VideoSDKRTC.xcframework', 'Frameworks/Mediasoup.xcframework', 'Frameworks/VideosdkWebSocket.xcframework'
+  end
+
+  s.subspec 'WithWebRTC' do |ss|
+    ss.vendored_frameworks = 'Frameworks/VideoSDKRTC.xcframework', 'Frameworks/Mediasoup.xcframework', 'Frameworks/WebRTC.xcframework', 'Frameworks/VideosdkWebSocket.xcframework'
+  end
+  
   s.xcconfig = {
     'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
     'OTHER_SWIFT_FLAGS' => '-Xcc -Wno-error=non-modular-include-in-framework-module',
